@@ -13,7 +13,7 @@ Adequate instructions for this question can be found in the Bootstrap documentat
 > The Bootstrap documentation says to put the javascript link at the end of the body tag. While this is a good practice, it's preferable to put it in the head tag. You can do so by adding the `defer` attribute to the script tag. This will make the browser load the script after the page has been parsed (equivalent to putting it at the bottom of the `<body>` element).
 
 ### Q2. Add a Bootstrap Navbar
-Bessides the hero section, the Navbar is one of the most important elements of a website. It is the first thing a user sees when they visit your website. It is important to make sure the Navbar is visually appealing and easy to use.
+Bessides a `hero` section, the navigation bar is one of the most important elements of a website. It is the first thing a user sees when they visit your website. It is important to make sure the Navbar is visually appealing and easy to use.
 
 Navigate to the Bootstrap documentation to find a a Bootstrap Navbar to add to your `ica7.html` file. You can use any of the Navbar examples provided in the documentation. You can also customize the Navbar to your liking. Make sure to add the Navbar to the top of your `ica7.html` file and configure the links in the Navbar to have navigable functionality on your page.
 
@@ -36,12 +36,15 @@ You will need to create a form using the Bootstrap grid system. The form should 
 ### Q8. Add Bootstrap Form elements to populate the form
 Now, populate your form structure with Bootstrap form elements. You can use any form elements you like, such as input fields, radio buttons, checkboxes, etc. You can also use Bootstrap form validation classes to style your form elements.
 
-> [!TIP]
-> It's a good idea to structure your form inputs on the use-cases for each input type. For example, long text inputs should typically be one full row, while numbers, emails, and other short inputs can be placed side-by-side in separate columns. Make sure to group related inputs together so there is thematic cohesion in your form.
+> [!WARNING]
+> How you organize your form is often the most important aspect of form building; Make sure you employ visual hierarchy techniques when building your forms, for example, Long text inputs should typically be one full row, while numbers, emails, and other short inputs can be placed side-by-side in separate columns. Make sure to group related inputs together so there is thematic cohesion in your form.
 
 ### Q9. Add three Font Awesome icons or Google Fonts icons
+https://fonts.google.com/icons
+https://fontawesome.com/
 
 ### Q10. Add a Google Fonts font family
+
 
 ---
 # CDNs
@@ -66,5 +69,7 @@ Button / Button Group
 Accordion
 
 # Font Awesome
+Font Awesome is a font and icon toolkit based on CSS and LESS. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 5.3.1 version, and it has 1,588 free icons and 7,842 pro icons. Font Awesome is a web font containing all the icons from the Twitter Bootstrap framework, and now many more.
 
 # Google Fonts
+Google Font is a library of free licensed font families, an interactive web directory for browsing the library, and APIs for conveniently using the fonts via CSS and Android. The library is maintained by Google and is very popular among web developers. The library contains over 1,000 free licensed font families and is used on over 20 million websites.
