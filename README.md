@@ -30,6 +30,7 @@ You will need to create a form using the Bootstrap grid system. The form should 
 > Try sketching out your form on a piece of paper before you start coding. This will help you visualize the form structure and layout before you start coding. It's also a good idea to think about the use-cases for your form.
 > - What will the form be used for? 
 > - What kind of information will the user need to input?
+> 
 > This will help you structure your form in a way that makes sense for the user.
 
 ### Q8. Add Bootstrap Form elements to populate the form
