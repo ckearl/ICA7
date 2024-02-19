@@ -40,11 +40,10 @@ Now, populate your form structure with Bootstrap form elements. You can use any 
 > How you organize your form is often the most important aspect of form building; Make sure you employ visual hierarchy techniques when building your forms, for example, Long text inputs should typically be one full row, while numbers, emails, and other short inputs can be placed side-by-side in separate columns. Make sure to group related inputs together so there is thematic cohesion in your form.
 
 ### Q9. Add three Font Awesome icons or Google Fonts icons
-https://fonts.google.com/icons
-https://fontawesome.com/
+The purpose of icons are to help guide the users eyes to navigable elements on the webpage. They are also used to help break up large sections of text and to add visual interest to the webpage. Add three icons from a CDN to your `ica7.html` file. You can use either [Font Awesome](https://fontawesome.com/) or [Google Fonts](https://fonts.google.com/icons) icons.
 
 ### Q10. Add a Google Fonts font family
-
+The last step is to add a Google Fonts font family to your `ica7.html` file. Be strategic with the font that you choose. You can add the font family to your `ica7.html` file using the `<link>` tag inside the `<head>` of the document, and address the font-family in your `ica7.css` file to apply to fonts to your webpage.
 
 ---
 # CDNs
@@ -52,8 +51,37 @@ CDNs (Content Delivery Networks) are a way to deliver content to the user. They 
 
 # Bootstrap
 ## Introduction
-Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.
+Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains CSS- and JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components. The main catch of Bootstrap is the flexibility and ease of use of adding CSS styles to your HTML elements in a short-hand notation. This allows for rapid development of web pages and web applications. Bootstrap is also a great tool for learning how to build responsive web pages, as it has a built-in grid system that allows for easy layout of web pages.
 
+## Background
+Backgrounds are a fundamental part of any web page. Backgrounds can be set using the class names `bg-{color}` where `{color}` is the name of the color you want to use. For example, you can set the background of an element to be blue by using the class name
+ - `bg-primary` - Blue background
+ - `bg-secondary` - Grey background
+ - `bg-success` - Green background
+ - `bg-dark` - Dark background
+... and many more
+
+Other background coloring options:
+ - A light background of each color is also available by using the class `.bg-{color}-subtle`.
+ - The backgound color can be set to a gradient by adding the class `.bg-gradient` to any HTML element.
+ - The background color opacity can be set by adding the class `.bg-opacity-{value}` where `{value}` is a number between 0 and 100.
+   - The only accepted values of the opacity `{value}`'s are 75, 50, 25, 10.
+ - The background color can be set to a transparent color by adding the class `.bg-transparent` to any HTML element.
+
+## Borders
+Bootstrap has a variety of border classes that can be used to style the borders of HTML elements. The border classes can be used to add borders to the top, bottom, left, and right sides of an element. The border classes can also be used to add rounded corners to an element. The border classes can be used to add a border to an element, and the border classes can be used to remove a border from an element.
+
+## Buttons
+
+## Colors
+
+## Opacity
+
+## Sizing
+
+## Spacing
+
+## Text
 
 ## Grid system
 Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.
