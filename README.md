@@ -79,7 +79,7 @@ Bootstrap has a variety of border classes that can be used to style the borders 
  - Border opacity can be changed with the class `.border-opacity-{value}` where `{value}` is a number between 0 and 100.
    - The only accepted values of the opacity `{value}`'s are 75, 50, 25, 10.
  - Border widths can be changed with the class `.border-{width}` where `{width}` is one of `1`, `2`, `3`, `4`, `5`.
- - The border can be rounded with the class `.rounded` and the following additional classes:
+ - The border can be rounded with the class `.rounded`. The following additional classes:
   - `.rounded-top`, `.rounded-end`, `.rounded-bottom`, `.rounded-start`, `.rounded-circle`, `.rounded-pill` are all available to round the corners of an element in a specific direction.
  - The degree of the rounded corners can be changed with the class `.rounded-{size}` where `{size}` is one of `0`, `1`, `2`, `3`, `4`, `5`.
 
