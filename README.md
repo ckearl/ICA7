@@ -18,9 +18,9 @@ Bessides a `hero` section, the navigation bar is one of the most important eleme
 Navigate to the Bootstrap documentation to find a a Bootstrap Navbar to add to your `ica7.html` file. You can use any of the Navbar examples provided in the documentation. You can also customize the Navbar to your liking. Make sure to add the Navbar to the top of your `ica7.html` file and configure the links in the Navbar to have navigable functionality on your page.
 
 ### Q3 - Q6. Add your choice of four Bootstrap elements, and STYLE THEM!
-Choose any four Bootstrap elements to add to your `ica7.html` file. In my opinion, the Bootstrap elements `Collapse`, `Card`, `Carousel`, `Scrollspy`, and `Accordion` are likely some of the most effective elements to learn the Bootstrap framework; however, pick any combination of elements you like. Customize the elements to however you feel best fit the webpage.
+Now that you've learned how to import a Bootstrap element, choose any four other Bootstrap elements to add to your `ica7.html` file. In my opinion, the Bootstrap elements `Collapse`, `Card`, `Carousel`, `Scrollspy`, and `Accordion` are likely some of the most effective elements to learn the Bootstrap framework; however, pick any combination of elements you like. Customize the elements to however you feel best fit the webpage.
 
-For each of the four elements you choose, you will need to add Bootstrap classes to style the elements. You aren't limited to any specific styles for each element, free feel use background colors, text colors, borders, and other styles to make your elements visually appealing. Make sure to practice all the styling shortcuts discussed in this ICA.
+For each of the four elements you choose, you will need to add Bootstrap classes to style the elements. You aren't limited to any specific styles for each element, free feel use background colors (`.bg-{color}`), text styling (`.text-{alignment}`, `.fs-{size}`, etc.), borders (`.border-{color}`, `.border-{width}`, etc.), or other styles to make your elements visually appealing. Make sure to practice all the styling shortcuts discussed in this ICA.
 
 > [!TIP]
 > It's often a good idea to use a combination of elements that work well together. For example, you could use a `Carousel` element to display pictures about a product, and then use a `Accordion` element to display information snippets of each product. This would create a cohesive and visually appealing section of your webpage.
@@ -90,6 +90,33 @@ Combining these classes can create a variety of different border styles for your
  - Text coloring also has the `.text-{color}-emphasis` options, where the emphasis is a duller version of the color.
  - Text opacity can be changed with the class `.text-opacity-{value}` where `{value}` is a number between 0 and 100.
   - The only accepted values of the opacity `{value}`'s are 75, 50, 25, 10.
+
+## Position
+HTML elements can be positioned using the Bootstrap positioning classes. The positioning classes can be used to set the position of an element relative to the viewport or the parent element. The positioning of this element can be set using the class `.position-{type}`:
+ - Just like the `position` property in CSS, `{type}` is one of `static`, `relative`, `absolute`, `fixed`, `sticky`.
+
+Using position Bootstrap shortcuts, you can arrange elements easily with the edge positioning utilities. The format is `{property}-{position}`.
+Where property is one of:
+ - `top` - for the vertical top position
+ - `start` - for the horizontal left position (in LTR)
+ - `bottom` - for the vertical bottom position
+ - `end` - for the horizontal right position (in LTR)
+
+Where position is one of:
+ - 0 - for 0 edge position
+ - 50 - for 50% edge position
+ - 100 - for 100% edge position
+
+examples:
+ - `.position-absolute top-0 end-0`
+ - `.position-absolute top-50 start-50`
+ - `.position-absolute bottom-0 start-0`
+
+> [!TIP]
+> There are few direct use cases for using absolute positioning while using the Bootstrap framework. It's often a good idea to use the grid system to position elements on the page. Some use cases for absolute positioning are for elements that need statically positioned elements to be relative to them, like an alert for notifications, pop-ups/modals, and toggleable menus.
+
+- You can also use `.translate-middle` to center an element horizontally and vertically when it is absolutely positioned.
+- Lastly, by adding `.translate-middle-x` or `.translate-middle-y` classes, elements can be positioned only in horizontal or vertical direction.
 
 ## Sizing
  - The width and height of an element can be set by using the class `.w-{size}` or `.h-{size}` where `{size}` is one of `25`, `50`, `75`, `100`, `auto`. These values are percentages of the parent element's width or height.
@@ -162,8 +189,29 @@ Font weights can be set by using the class `.fw-{weight}`.
 ## Grid system
 Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.
 
+Example:
+```html
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+</div>
+```
+
 # Font Awesome
 Font Awesome is a font and icon toolkit based on CSS and LESS. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 5.3.1 version, and it has 1,588 free icons and 7,842 pro icons. Font Awesome is a web font containing all the icons from the Twitter Bootstrap framework, and now many more.
 
-# Google Fonts
-Google Font is a library of free licensed font families, an interactive web directory for browsing the library, and APIs for conveniently using the fonts via CSS and Android. The library is maintained by Google and is very popular among web developers. The library contains over 1,000 free licensed font families and is used on over 20 million websites.
+Similar to the Bootstrap installation, you can use the Font Awesome CDN to link the files to your `ica7.html` file. You will be able to retrieve the appropriate link from the Font Awesome website as soon as you sign up for a free account and register for a Developer Kit. Navigate here to get started: [Font Awesome](https://fontawesome.com/)
+
+# Google Fonts & Icons
+Google Fonts is a library of free licensed font families, an interactive web directory for browsing the library, and APIs for conveniently using the fonts via CSS and Android. The library is maintained by Google and is very popular among web developers. The library contains over 1,000 free licensed font families and is used on over 20 million websites.
+
+Implementing Google Font Icons is by the same logic as using Google Fonts, you will retrieve the appropriate link from the Google Fonts website for EACH Icon and add it to the the head of your `ica7.html` file. You can navigate to the Google Fonts website here: [Google Fonts](https://fonts.google.com/icons)
