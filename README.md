@@ -17,8 +17,10 @@ Bessides a `hero` section, the navigation bar is one of the most important eleme
 
 Navigate to the Bootstrap documentation to find a a Bootstrap Navbar to add to your `ica7.html` file. You can use any of the Navbar examples provided in the documentation. You can also customize the Navbar to your liking. Make sure to add the Navbar to the top of your `ica7.html` file and configure the links in the Navbar to have navigable functionality on your page.
 
-### Q3 - Q6. Add your choice of four Bootstrap elements
+### Q3 - Q6. Add your choice of four Bootstrap elements, and STYLE THEM!
 Choose any four Bootstrap elements to add to your `ica7.html` file. In my opinion, the Bootstrap elements `Collapse`, `Card`, `Carousel`, `Scrollspy`, and `Accordion` are likely some of the most effective elements to learn the Bootstrap framework; however, pick any combination of elements you like. Customize the elements to however you feel best fit the webpage.
+
+For each of the four elements you choose, you will need to add Bootstrap classes to style the elements. You aren't limited to any specific styles for each element, free feel use background colors, text colors, borders, and other styles to make your elements visually appealing. Make sure to practice all the styling shortcuts discussed in this ICA.
 
 > [!TIP]
 > It's often a good idea to use a combination of elements that work well together. For example, you could use a `Carousel` element to display pictures about a product, and then use a `Accordion` element to display information snippets of each product. This would create a cohesive and visually appealing section of your webpage.
@@ -71,30 +73,94 @@ Other background coloring options:
 ## Borders
 Bootstrap has a variety of border classes that can be used to style the borders of HTML elements. The border classes can be used to add borders to the top, bottom, left, and right sides of an element. The border classes can also be used to add rounded corners to an element. The border classes can be used to add a border to an element, and the border classes can be used to remove a border from an element.
 
-## Buttons
+ - You can add a simple border with `.border`. You can also opt to add a border of a specific direction with `border-{direction}`, where `{direction}` is one of `top`, `end`, `bottom`, or `start`.
+ - You can subtract a border from an element by adding the class `.border-0` to the element, and directionally subtract a border by adding the class `.border-{direction}-0` to the element.
+ - Colored borders can be added with the additional class of `.border-{color}`. The same coloring options are available as the background color options (`border-secondary-subtle`, etc.).
+ - Border opacity can be changed with the class `.border-opacity-{value}` where `{value}` is a number between 0 and 100.
+   - The only accepted values of the opacity `{value}`'s are 75, 50, 25, 10.
+ - Border widths can be changed with the class `.border-{width}` where `{width}` is one of `1`, `2`, `3`, `4`, `5`.
+ - The border can be rounded with the class `.rounded` and the following additional classes:
+  - `.rounded-top`, `.rounded-end`, `.rounded-bottom`, `.rounded-start`, `.rounded-circle`, `.rounded-pill` are all available to round the corners of an element in a specific direction.
+ - The degree of the rounded corners can be changed with the class `.rounded-{size}` where `{size}` is one of `0`, `1`, `2`, `3`, `4`, `5`.
+
+Combining these classes can create a variety of different border styles for your HTML elements. Skills in border styling are important for creating visually appealing web pages.
 
 ## Colors
-
-## Opacity
+ - Text color can be changed with the class `.text-{color}` where `{color}` is the name of the color you want to use. For example, you can set the font color of an element to be blue by using the class name `.text-primary`. The same color options are available as the background color options.
+ - Text coloring also has the `.text-{color}-emphasis` options, where the emphasis is a duller version of the color.
+ - Text opacity can be changed with the class `.text-opacity-{value}` where `{value}` is a number between 0 and 100.
+  - The only accepted values of the opacity `{value}`'s are 75, 50, 25, 10.
 
 ## Sizing
+ - The width and height of an element can be set by using the class `.w-{size}` or `.h-{size}` where `{size}` is one of `25`, `50`, `75`, `100`, `auto`. These values are percentages of the parent element's width or height.
+ - The `max-width` and `max-height` CSS properties can be added to an element by setting the classes of `.mw-{size}` or `.mh-{size}`.
+ - You can also set sizing of an element relative to the viewport:
+  - `.min-vw-{size}` => minimum viewport width
+  - `.min-vh-{size}` => minimum viewport height
+  - `.vw-{size}` => viewport width
+  - `.vh-{size}` => viewport height
 
 ## Spacing
+HTML elements can be spaced using the Bootstrap spacing classes. The spacing classes can be used to add margin and padding to an element. The margin classes can be used to add space around an element, and the padding classes can be used to add space inside an element. The margin and padding classes can be used to add space to the top, bottom, left, and right sides of an element. The margin and padding classes can also be used to add space to all sides of an element.
+
+The classes are named using the format `{property}{sides}-{size}`.
+
+Where property is one of:
+ - `m` => for classes that set margin
+ - `p` => for classes that set padding
+
+Where sides is one of:
+ - `t` => for classes that set margin-top or padding-top
+ - `b` => for classes that set margin-bottom or padding-bottom
+ - `s` => (start) for classes that set margin-left or padding-left in LTR, margin-right or padding-right in RTL
+ - `e` => (end) for classes that set margin-right or padding-right in LTR, margin-left or padding-left in RTL
+ - `x` => for classes that set both *-left and *-right
+ - `y` => for classes that set both *-top and *-bottom
+ - `blank` => for classes that set a margin or padding on all 4 sides of the element
+
+Where size is one of:
+ - `0` => for classes that eliminate the margin or padding by setting it to 0
+ - `1` => (by default) for classes that set the margin or padding to $spacer * .25
+ - `2` => (by default) for classes that set the margin or padding to $spacer * .5
+ - `3` => (by default) for classes that set the margin or padding to $spacer
+ - `4` => (by default) for classes that set the margin or padding to $spacer * 1.5
+ - `5` => (by default) for classes that set the margin or padding to $spacer * 3
+ - `auto` => for classes that set the margin to auto
+
+> [!IMPORTANT]
+> The default value of `$spacer` is 1rem (16px).
+
+You can center a block element by adding the class `.mx-auto` to the element. This will center the element horizontally.
+
+> [!IMPORTANT]
+> Using `.mx-auto` will only center elements with a `display` property of `block` and a static width. If you want to center an element with a `display` property of `inline` or `inline-block`, you will need to use the class `.text-center`.
 
 ## Text
+### Text Alignment
+Text can be aligned using the class `.text-{alignment}`.
+ - `{alignment}` is one of `start`, `end`, `center`.
+
+### Text Wrap
+Text can be wrapped using the class `.text-{wrap}`.
+ - `{wrap}` is one of `nowrap`, `wrap`.
+
+### Text Transformation
+Text can be transformed using the class `.text-{transformation}`.
+ - `{transformation}` is one of `lowercase`, `uppercase`, `capitalize`, `none`.
+
+### Font Size
+Font sizes can be set by using the class `.fs-{size}`.
+ - Possible `{size}` values are `1`, `2`, `3`, `4`, `5`, `6`.
+ - `1` is equivalent to the size of an `h1` tag, and `6` is equivalent to the size of an `h6` tag.
+
+### Font Weight
+Font weights can be set by using the class `.fw-{weight}`.
+ - Possible values for `{weight}` are `.bold`, `.bolder`, `.semibold`, `.medium`, `.normal`, `.light`, `.lighter`
+`.fst-italic`
+`.fst-normal`
 
 ## Grid system
 Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.
-
-## Elements
-Scrollspy
-Offcanvas
-Navbar
-Collapse
-Carousel
-Card
-Button / Button Group
-Accordion
 
 # Font Awesome
 Font Awesome is a font and icon toolkit based on CSS and LESS. It was made by Dave Gandy for use with Bootstrap, and later was incorporated into the BootstrapCDN. Font Awesome has a 5.3.1 version, and it has 1,588 free icons and 7,842 pro icons. Font Awesome is a web font containing all the icons from the Twitter Bootstrap framework, and now many more.
