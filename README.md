@@ -187,7 +187,9 @@ Font weights can be set by using the class `.fw-{weight}`.
 `.fst-normal`
 
 ## Grid system
-Bootstrap includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins for generating more semantic layouts.
+The grid system is used to create a layout for a web page. The grid system is made up of rows and columns. The rows are used to group columns together, and the columns are used to layout the content of the web page. The grid system is used to create a responsive layout that works on all devices.
+
+You can define up to 12 columns in a row. The columns are defined using the class `.col` or `.col-{size}`, where size can be `1`, `3`, `4`, `6`, `8`, or `12`. The columns can be used to layout the content of the web page. Any column that's given a static width will be given `{size} / 12` of the width of the parent element. The columns can be used to create a responsive layout that works on all devices.
 
 Example:
 ```html
